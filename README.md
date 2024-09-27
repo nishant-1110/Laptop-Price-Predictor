@@ -14,16 +14,19 @@ Predicted laptop price.
 
 ## Workflow
 1. Data Preprocessing:
+   
 -> Applied One-Hot Encoding to categorical variables like brand and processor.
    
 -> Used a ColumnTransformer to apply transformations to selected columns while passing others through unchanged.
 
-3. Model Training:
+2. Model Training:
+   
 -> Used Random Forest Regressor with specific hyperparameters (n_estimators=100, max_samples=0.5, max_features=0.75, max_depth=15).
    
 -> Fitted the pipeline to training data.
 
-4. Model Evaluation:
+3. Model Evaluation:
+   
 -> R² Score: Achieved 89%.
    
 -> Mean Absolute Error (MAE): 0.15.
